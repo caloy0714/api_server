@@ -17,6 +17,17 @@ class ProductsController extends Controller
                 return response()->json(['products'=>$products],200);
         }
 
+        public function categoryProduct($category_name){
+                return Product::where('category', $category_name,)->get();
+
+        }
+
+        public function allCategory(){
+                $products = Product::all();
+                return response()->json(['products'=>$products], 200);
+        }
+
+
         public function addProduct(Request $request){
                 $request->validate([
                         'title'=>'required',
@@ -67,6 +78,10 @@ class ProductsController extends Controller
         public function deleteProduct($product_id){
                 $product = Product::find($product_id);
                 $product->delete();
+        }
+
+        public function searchProduct($title){
+                return Product::where("title", $title)->get();
         }
 }
 
