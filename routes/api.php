@@ -15,10 +15,18 @@ use App\Models\Product;
 |
 */
 
+
+ 
+Route::get('products', [ProductsController::class, 'allProducts']);
+
+Route::post('product/add',[ProductsController::class, 'addProduct']);
+
+Route::get('products/{product_id}',[ProductsController::class, 'singleProduct']);
+
+Route::put('products/{product_id}/update',[ProductsController::class, 'updateProduct']);
+
+Route::delete('products/{product_id}/delete',[ProductsController::class, 'deleteProduct']);
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
- 
-Route::get('products', [ProductsController::class, 'getAllProducts']);
-
-Route::post('product/add',[ProductsController::class, 'addProduct']);
