@@ -1,22 +1,40 @@
 <?php
 
 namespace App\Http\Controllers;
-require "vendor/autoload.php";
-use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Models\Products;
+
 
 class ProductsController extends Controller
 {
     public function getAllProducts(){
-        $client = new Client([
-                'base_uri' => 'http://127.0.0.1:8000/'
-        ]);
-        $response = $client->get('http://127.0.0.1:8000/products');
-        $code = $response->getStatusCode();
-        $body = $response->getBody();
-        $products=json_decode($body)->products;
-        var_dump($products);
+        $products=Product::all;
+        return response()->json(['products'=>$products], 200);
+}
+
+        public function addProduct(Request $request){
+                $request->validate([
+                        'title'=>'required',
+                        'description'=>'required',
+                        'currency'=>'required',
+                        'price'=>'required',
+                        'brand'=>'required',
+                        'category'=>'required',
+                        'image'=>'required'
+                ]);
+
+                $product= new Product;
+                $product->title =$request->title;
+                $product->description =$request->description;
+                $product->currency =$request->currency; 
+                $product->price =$request->price;
+                $product->brand =$request->brand;
+                $product->category =$request->category;
+                $product->image =$request->image;
+
+                $product->save();
+                return response->json(200);
+
         }
 }
 
