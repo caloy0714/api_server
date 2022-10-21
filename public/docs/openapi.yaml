@@ -1,0 +1,922 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost:8000'
+paths:
+  /api/products:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  products:
+                    -
+                      id: 1
+                      title: BOOK
+                      description: 'VERY OLD BOOK'
+                      currency: CAS
+                      price: 999999
+                      brand: JJTIM
+                      category: BOOK
+                      image: 'http://localhost/phpmyadmin/index.php?route=/table/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T08:01:23.000000Z'
+                    -
+                      id: 2
+                      title: 'Phased multi-state function'
+                      description: 'Pariatur aperiam rerum ducimus error perspiciatis dolor aperiam.'
+                      currency: molestiae
+                      price: 176848
+                      brand: 'Re-contextualized modular openarchitecture'
+                      category: Gadgets
+                      image: 'http://www.frami.org/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 3
+                      title: 'Advanced nextgeneration standardization'
+                      description: 'Est quia temporibus labore tempora repellendus.'
+                      currency: commodi
+                      price: 52492
+                      brand: 'Re-engineered clear-thinking monitoring'
+                      category: Apparel
+                      image: 'http://glover.com/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 4
+                      title: 'Customizable mobile conglomeration'
+                      description: 'Sed perspiciatis molestiae libero nobis occaecati et similique qui.'
+                      currency: magni
+                      price: 3049
+                      brand: 'Reverse-engineered value-added hub'
+                      category: Apparel
+                      image: 'http://kreiger.info/sint-est-animi-magnam-placeat-recusandae-temporibus'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 5
+                      title: 'Profit-focused static infrastructure'
+                      description: 'Magni ducimus est sunt dolore corrupti magni atque sunt.'
+                      currency: et
+                      price: 7
+                      brand: 'Pre-emptive heuristic instructionset'
+                      category: Sports
+                      image: 'http://www.hickle.com/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 6
+                      title: 'Cross-platform homogeneous frame'
+                      description: 'Id consequatur maiores velit quis doloremque.'
+                      currency: reiciendis
+                      price: 937071156
+                      brand: 'Networked hybrid capacity'
+                      category: Art
+                      image: 'http://tremblay.com/cum-iure-quo-quidem-vitae-veniam-ut'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 7
+                      title: 'Seamless background initiative'
+                      description: 'Dolor quos laborum dolores repellendus fugit ratione.'
+                      currency: ipsam
+                      price: 29
+                      brand: 'Expanded tangible circuit'
+                      category: Sports
+                      image: 'http://www.russel.biz/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 8
+                      title: 'Up-sized methodical model'
+                      description: 'Necessitatibus nihil quo dolores excepturi neque aut tempora eius.'
+                      currency: eos
+                      price: 7
+                      brand: 'Organic logistical success'
+                      category: Art
+                      image: 'https://koepp.biz/enim-accusantium-architecto-at-est-sunt-ullam.html'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 9
+                      title: 'Expanded bi-directional protocol'
+                      description: 'Et autem maxime voluptatum dolorem aut culpa sit blanditiis.'
+                      currency: dolore
+                      price: 92
+                      brand: 'Business-focused secondary flexibility'
+                      category: Fashion
+                      image: 'http://zemlak.net/sit-consequatur-odio-repellat-est-vitae-voluptate'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 10
+                      title: 'Stand-alone disintermediate utilisation'
+                      description: 'Cupiditate eaque harum debitis autem provident animi non doloribus et amet.'
+                      currency: vel
+                      price: 89886
+                      brand: 'Switchable even-keeled middleware'
+                      category: Books
+                      image: 'http://www.mills.info/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                properties:
+                  products:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        title: BOOK
+                        description: 'VERY OLD BOOK'
+                        currency: CAS
+                        price: 999999
+                        brand: JJTIM
+                        category: BOOK
+                        image: 'http://localhost/phpmyadmin/index.php?route=/table/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T08:01:23.000000Z'
+                      -
+                        id: 2
+                        title: 'Phased multi-state function'
+                        description: 'Pariatur aperiam rerum ducimus error perspiciatis dolor aperiam.'
+                        currency: molestiae
+                        price: 176848
+                        brand: 'Re-contextualized modular openarchitecture'
+                        category: Gadgets
+                        image: 'http://www.frami.org/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 3
+                        title: 'Advanced nextgeneration standardization'
+                        description: 'Est quia temporibus labore tempora repellendus.'
+                        currency: commodi
+                        price: 52492
+                        brand: 'Re-engineered clear-thinking monitoring'
+                        category: Apparel
+                        image: 'http://glover.com/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 4
+                        title: 'Customizable mobile conglomeration'
+                        description: 'Sed perspiciatis molestiae libero nobis occaecati et similique qui.'
+                        currency: magni
+                        price: 3049
+                        brand: 'Reverse-engineered value-added hub'
+                        category: Apparel
+                        image: 'http://kreiger.info/sint-est-animi-magnam-placeat-recusandae-temporibus'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 5
+                        title: 'Profit-focused static infrastructure'
+                        description: 'Magni ducimus est sunt dolore corrupti magni atque sunt.'
+                        currency: et
+                        price: 7
+                        brand: 'Pre-emptive heuristic instructionset'
+                        category: Sports
+                        image: 'http://www.hickle.com/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 6
+                        title: 'Cross-platform homogeneous frame'
+                        description: 'Id consequatur maiores velit quis doloremque.'
+                        currency: reiciendis
+                        price: 937071156
+                        brand: 'Networked hybrid capacity'
+                        category: Art
+                        image: 'http://tremblay.com/cum-iure-quo-quidem-vitae-veniam-ut'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 7
+                        title: 'Seamless background initiative'
+                        description: 'Dolor quos laborum dolores repellendus fugit ratione.'
+                        currency: ipsam
+                        price: 29
+                        brand: 'Expanded tangible circuit'
+                        category: Sports
+                        image: 'http://www.russel.biz/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 8
+                        title: 'Up-sized methodical model'
+                        description: 'Necessitatibus nihil quo dolores excepturi neque aut tempora eius.'
+                        currency: eos
+                        price: 7
+                        brand: 'Organic logistical success'
+                        category: Art
+                        image: 'https://koepp.biz/enim-accusantium-architecto-at-est-sunt-ullam.html'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 9
+                        title: 'Expanded bi-directional protocol'
+                        description: 'Et autem maxime voluptatum dolorem aut culpa sit blanditiis.'
+                        currency: dolore
+                        price: 92
+                        brand: 'Business-focused secondary flexibility'
+                        category: Fashion
+                        image: 'http://zemlak.net/sit-consequatur-odio-repellat-est-vitae-voluptate'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 10
+                        title: 'Stand-alone disintermediate utilisation'
+                        description: 'Cupiditate eaque harum debitis autem provident animi non doloribus et amet.'
+                        currency: vel
+                        price: 89886
+                        brand: 'Switchable even-keeled middleware'
+                        category: Books
+                        image: 'http://www.mills.info/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                    items:
+                      type: object
+      tags:
+        - Endpoints
+      security: []
+  /api/product/add:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: ''
+                  example: voluptatibus
+                description:
+                  type: string
+                  description: ''
+                  example: laborum
+                currency:
+                  type: string
+                  description: ''
+                  example: nam
+                price:
+                  type: string
+                  description: ''
+                  example: itaque
+                brand:
+                  type: string
+                  description: ''
+                  example: voluptatem
+                category:
+                  type: string
+                  description: ''
+                  example: voluptatem
+                image:
+                  type: string
+                  description: ''
+                  example: quos
+              required:
+                - title
+                - description
+                - currency
+                - price
+                - brand
+                - category
+                - image
+      security: []
+  '/api/products/{product_id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  products:
+                    id: 1
+                    title: BOOK
+                    description: 'VERY OLD BOOK'
+                    currency: CAS
+                    price: 999999
+                    brand: JJTIM
+                    category: BOOK
+                    image: 'http://localhost/phpmyadmin/index.php?route=/table/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60'
+                    created_at: '2022-10-01T07:10:04.000000Z'
+                    updated_at: '2022-10-01T08:01:23.000000Z'
+                properties:
+                  products:
+                    type: object
+                    example:
+                      id: 1
+                      title: BOOK
+                      description: 'VERY OLD BOOK'
+                      currency: CAS
+                      price: 999999
+                      brand: JJTIM
+                      category: BOOK
+                      image: 'http://localhost/phpmyadmin/index.php?route=/table/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T08:01:23.000000Z'
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: product_id
+        description: 'The ID of the product.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/products/{category}/category':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: category
+        description: ''
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/products/{product_id}/update':
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: ''
+                  example: voluptatibus
+                description:
+                  type: string
+                  description: ''
+                  example: rem
+                currency:
+                  type: string
+                  description: ''
+                  example: doloremque
+                price:
+                  type: string
+                  description: ''
+                  example: excepturi
+                brand:
+                  type: string
+                  description: ''
+                  example: harum
+                category:
+                  type: string
+                  description: ''
+                  example: veritatis
+                image:
+                  type: string
+                  description: ''
+                  example: consequuntur
+              required:
+                - title
+                - description
+                - currency
+                - price
+                - brand
+                - category
+                - image
+      security: []
+    parameters:
+      -
+        in: path
+        name: product_id
+        description: 'The ID of the product.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/products/{product_id}/delete':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: product_id
+        description: 'The ID of the product.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/products/{title}/search':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: title
+        description: ''
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/products/category/categories:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  products:
+                    -
+                      id: 1
+                      title: BOOK
+                      description: 'VERY OLD BOOK'
+                      currency: CAS
+                      price: 999999
+                      brand: JJTIM
+                      category: BOOK
+                      image: 'http://localhost/phpmyadmin/index.php?route=/table/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T08:01:23.000000Z'
+                    -
+                      id: 2
+                      title: 'Phased multi-state function'
+                      description: 'Pariatur aperiam rerum ducimus error perspiciatis dolor aperiam.'
+                      currency: molestiae
+                      price: 176848
+                      brand: 'Re-contextualized modular openarchitecture'
+                      category: Gadgets
+                      image: 'http://www.frami.org/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 3
+                      title: 'Advanced nextgeneration standardization'
+                      description: 'Est quia temporibus labore tempora repellendus.'
+                      currency: commodi
+                      price: 52492
+                      brand: 'Re-engineered clear-thinking monitoring'
+                      category: Apparel
+                      image: 'http://glover.com/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 4
+                      title: 'Customizable mobile conglomeration'
+                      description: 'Sed perspiciatis molestiae libero nobis occaecati et similique qui.'
+                      currency: magni
+                      price: 3049
+                      brand: 'Reverse-engineered value-added hub'
+                      category: Apparel
+                      image: 'http://kreiger.info/sint-est-animi-magnam-placeat-recusandae-temporibus'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 5
+                      title: 'Profit-focused static infrastructure'
+                      description: 'Magni ducimus est sunt dolore corrupti magni atque sunt.'
+                      currency: et
+                      price: 7
+                      brand: 'Pre-emptive heuristic instructionset'
+                      category: Sports
+                      image: 'http://www.hickle.com/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 6
+                      title: 'Cross-platform homogeneous frame'
+                      description: 'Id consequatur maiores velit quis doloremque.'
+                      currency: reiciendis
+                      price: 937071156
+                      brand: 'Networked hybrid capacity'
+                      category: Art
+                      image: 'http://tremblay.com/cum-iure-quo-quidem-vitae-veniam-ut'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 7
+                      title: 'Seamless background initiative'
+                      description: 'Dolor quos laborum dolores repellendus fugit ratione.'
+                      currency: ipsam
+                      price: 29
+                      brand: 'Expanded tangible circuit'
+                      category: Sports
+                      image: 'http://www.russel.biz/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 8
+                      title: 'Up-sized methodical model'
+                      description: 'Necessitatibus nihil quo dolores excepturi neque aut tempora eius.'
+                      currency: eos
+                      price: 7
+                      brand: 'Organic logistical success'
+                      category: Art
+                      image: 'https://koepp.biz/enim-accusantium-architecto-at-est-sunt-ullam.html'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 9
+                      title: 'Expanded bi-directional protocol'
+                      description: 'Et autem maxime voluptatum dolorem aut culpa sit blanditiis.'
+                      currency: dolore
+                      price: 92
+                      brand: 'Business-focused secondary flexibility'
+                      category: Fashion
+                      image: 'http://zemlak.net/sit-consequatur-odio-repellat-est-vitae-voluptate'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                    -
+                      id: 10
+                      title: 'Stand-alone disintermediate utilisation'
+                      description: 'Cupiditate eaque harum debitis autem provident animi non doloribus et amet.'
+                      currency: vel
+                      price: 89886
+                      brand: 'Switchable even-keeled middleware'
+                      category: Books
+                      image: 'http://www.mills.info/'
+                      created_at: '2022-10-01T07:10:04.000000Z'
+                      updated_at: '2022-10-01T07:10:04.000000Z'
+                properties:
+                  products:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        title: BOOK
+                        description: 'VERY OLD BOOK'
+                        currency: CAS
+                        price: 999999
+                        brand: JJTIM
+                        category: BOOK
+                        image: 'http://localhost/phpmyadmin/index.php?route=/table/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T08:01:23.000000Z'
+                      -
+                        id: 2
+                        title: 'Phased multi-state function'
+                        description: 'Pariatur aperiam rerum ducimus error perspiciatis dolor aperiam.'
+                        currency: molestiae
+                        price: 176848
+                        brand: 'Re-contextualized modular openarchitecture'
+                        category: Gadgets
+                        image: 'http://www.frami.org/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 3
+                        title: 'Advanced nextgeneration standardization'
+                        description: 'Est quia temporibus labore tempora repellendus.'
+                        currency: commodi
+                        price: 52492
+                        brand: 'Re-engineered clear-thinking monitoring'
+                        category: Apparel
+                        image: 'http://glover.com/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 4
+                        title: 'Customizable mobile conglomeration'
+                        description: 'Sed perspiciatis molestiae libero nobis occaecati et similique qui.'
+                        currency: magni
+                        price: 3049
+                        brand: 'Reverse-engineered value-added hub'
+                        category: Apparel
+                        image: 'http://kreiger.info/sint-est-animi-magnam-placeat-recusandae-temporibus'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 5
+                        title: 'Profit-focused static infrastructure'
+                        description: 'Magni ducimus est sunt dolore corrupti magni atque sunt.'
+                        currency: et
+                        price: 7
+                        brand: 'Pre-emptive heuristic instructionset'
+                        category: Sports
+                        image: 'http://www.hickle.com/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 6
+                        title: 'Cross-platform homogeneous frame'
+                        description: 'Id consequatur maiores velit quis doloremque.'
+                        currency: reiciendis
+                        price: 937071156
+                        brand: 'Networked hybrid capacity'
+                        category: Art
+                        image: 'http://tremblay.com/cum-iure-quo-quidem-vitae-veniam-ut'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 7
+                        title: 'Seamless background initiative'
+                        description: 'Dolor quos laborum dolores repellendus fugit ratione.'
+                        currency: ipsam
+                        price: 29
+                        brand: 'Expanded tangible circuit'
+                        category: Sports
+                        image: 'http://www.russel.biz/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 8
+                        title: 'Up-sized methodical model'
+                        description: 'Necessitatibus nihil quo dolores excepturi neque aut tempora eius.'
+                        currency: eos
+                        price: 7
+                        brand: 'Organic logistical success'
+                        category: Art
+                        image: 'https://koepp.biz/enim-accusantium-architecto-at-est-sunt-ullam.html'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 9
+                        title: 'Expanded bi-directional protocol'
+                        description: 'Et autem maxime voluptatum dolorem aut culpa sit blanditiis.'
+                        currency: dolore
+                        price: 92
+                        brand: 'Business-focused secondary flexibility'
+                        category: Fashion
+                        image: 'http://zemlak.net/sit-consequatur-odio-repellat-est-vitae-voluptate'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                      -
+                        id: 10
+                        title: 'Stand-alone disintermediate utilisation'
+                        description: 'Cupiditate eaque harum debitis autem provident animi non doloribus et amet.'
+                        currency: vel
+                        price: 89886
+                        brand: 'Switchable even-keeled middleware'
+                        category: Books
+                        image: 'http://www.mills.info/'
+                        created_at: '2022-10-01T07:10:04.000000Z'
+                        updated_at: '2022-10-01T07:10:04.000000Z'
+                    items:
+                      type: object
+      tags:
+        - Endpoints
+      security: []
+  '/api/products/category/{category_name}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: category_name
+        description: ''
+        example: reiciendis
+        required: true
+        schema:
+          type: string
+  /api/user:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

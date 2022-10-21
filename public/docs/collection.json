@@ -1,0 +1,550 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost:8000"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "2b67209a-adc6-420f-9396-f62a5b72722b",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/products",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"products\":[{\"id\":1,\"title\":\"BOOK\",\"description\":\"VERY OLD BOOK\",\"currency\":\"CAS\",\"price\":999999,\"brand\":\"JJTIM\",\"category\":\"BOOK\",\"image\":\"http:\\\/\\\/localhost\\\/phpmyadmin\\\/index.php?route=\\\/table\\\/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T08:01:23.000000Z\"},{\"id\":2,\"title\":\"Phased multi-state function\",\"description\":\"Pariatur aperiam rerum ducimus error perspiciatis dolor aperiam.\",\"currency\":\"molestiae\",\"price\":176848,\"brand\":\"Re-contextualized modular openarchitecture\",\"category\":\"Gadgets\",\"image\":\"http:\\\/\\\/www.frami.org\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":3,\"title\":\"Advanced nextgeneration standardization\",\"description\":\"Est quia temporibus labore tempora repellendus.\",\"currency\":\"commodi\",\"price\":52492,\"brand\":\"Re-engineered clear-thinking monitoring\",\"category\":\"Apparel\",\"image\":\"http:\\\/\\\/glover.com\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":4,\"title\":\"Customizable mobile conglomeration\",\"description\":\"Sed perspiciatis molestiae libero nobis occaecati et similique qui.\",\"currency\":\"magni\",\"price\":3049,\"brand\":\"Reverse-engineered value-added hub\",\"category\":\"Apparel\",\"image\":\"http:\\\/\\\/kreiger.info\\\/sint-est-animi-magnam-placeat-recusandae-temporibus\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":5,\"title\":\"Profit-focused static infrastructure\",\"description\":\"Magni ducimus est sunt dolore corrupti magni atque sunt.\",\"currency\":\"et\",\"price\":7,\"brand\":\"Pre-emptive heuristic instructionset\",\"category\":\"Sports\",\"image\":\"http:\\\/\\\/www.hickle.com\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":6,\"title\":\"Cross-platform homogeneous frame\",\"description\":\"Id consequatur maiores velit quis doloremque.\",\"currency\":\"reiciendis\",\"price\":937071156,\"brand\":\"Networked hybrid capacity\",\"category\":\"Art\",\"image\":\"http:\\\/\\\/tremblay.com\\\/cum-iure-quo-quidem-vitae-veniam-ut\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":7,\"title\":\"Seamless background initiative\",\"description\":\"Dolor quos laborum dolores repellendus fugit ratione.\",\"currency\":\"ipsam\",\"price\":29,\"brand\":\"Expanded tangible circuit\",\"category\":\"Sports\",\"image\":\"http:\\\/\\\/www.russel.biz\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":8,\"title\":\"Up-sized methodical model\",\"description\":\"Necessitatibus nihil quo dolores excepturi neque aut tempora eius.\",\"currency\":\"eos\",\"price\":7,\"brand\":\"Organic logistical success\",\"category\":\"Art\",\"image\":\"https:\\\/\\\/koepp.biz\\\/enim-accusantium-architecto-at-est-sunt-ullam.html\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":9,\"title\":\"Expanded bi-directional protocol\",\"description\":\"Et autem maxime voluptatum dolorem aut culpa sit blanditiis.\",\"currency\":\"dolore\",\"price\":92,\"brand\":\"Business-focused secondary flexibility\",\"category\":\"Fashion\",\"image\":\"http:\\\/\\\/zemlak.net\\\/sit-consequatur-odio-repellat-est-vitae-voluptate\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":10,\"title\":\"Stand-alone disintermediate utilisation\",\"description\":\"Cupiditate eaque harum debitis autem provident animi non doloribus et amet.\",\"currency\":\"vel\",\"price\":89886,\"brand\":\"Switchable even-keeled middleware\",\"category\":\"Books\",\"image\":\"http:\\\/\\\/www.mills.info\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/product\/add",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/product\/add",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/product\/add"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"voluptatibus\",\"description\":\"laborum\",\"currency\":\"nam\",\"price\":\"itaque\",\"brand\":\"voluptatem\",\"category\":\"voluptatem\",\"image\":\"quos\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/products\/{product_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products\/:product_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products\/:product_id",
+                            "variable": [
+                                {
+                                    "id": "product_id",
+                                    "key": "product_id",
+                                    "value": "1",
+                                    "description": "The ID of the product."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"products\":{\"id\":1,\"title\":\"BOOK\",\"description\":\"VERY OLD BOOK\",\"currency\":\"CAS\",\"price\":999999,\"brand\":\"JJTIM\",\"category\":\"BOOK\",\"image\":\"http:\\\/\\\/localhost\\\/phpmyadmin\\\/index.php?route=\\\/table\\\/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T08:01:23.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/products\/{category}\/category",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products\/:category\/category",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products\/:category\/category",
+                            "variable": [
+                                {
+                                    "id": "category",
+                                    "key": "category",
+                                    "value": "1",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/products\/{product_id}\/update",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products\/:product_id\/update",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products\/:product_id\/update",
+                            "variable": [
+                                {
+                                    "id": "product_id",
+                                    "key": "product_id",
+                                    "value": "1",
+                                    "description": "The ID of the product."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"voluptatibus\",\"description\":\"rem\",\"currency\":\"doloremque\",\"price\":\"excepturi\",\"brand\":\"harum\",\"category\":\"veritatis\",\"image\":\"consequuntur\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/products\/{product_id}\/delete",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products\/:product_id\/delete",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products\/:product_id\/delete",
+                            "variable": [
+                                {
+                                    "id": "product_id",
+                                    "key": "product_id",
+                                    "value": "1",
+                                    "description": "The ID of the product."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/products\/{title}\/search",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products\/:title\/search",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products\/:title\/search",
+                            "variable": [
+                                {
+                                    "id": "title",
+                                    "key": "title",
+                                    "value": "1",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/products\/category\/categories",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products\/category\/categories",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products\/category\/categories"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "55"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"products\":[{\"id\":1,\"title\":\"BOOK\",\"description\":\"VERY OLD BOOK\",\"currency\":\"CAS\",\"price\":999999,\"brand\":\"JJTIM\",\"category\":\"BOOK\",\"image\":\"http:\\\/\\\/localhost\\\/phpmyadmin\\\/index.php?route=\\\/table\\\/get-field&db=dummyjson_db&table=products&where_clause_sign=6e7325faaba9f35b272297ea74ec0885035ba543ed7a4cad5c58265abf749747&where_clause=%60products%60.%60id%60+%3D+1&transform_key=image&sql_query=SELECT+%2A+FROM+%60products%60\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T08:01:23.000000Z\"},{\"id\":2,\"title\":\"Phased multi-state function\",\"description\":\"Pariatur aperiam rerum ducimus error perspiciatis dolor aperiam.\",\"currency\":\"molestiae\",\"price\":176848,\"brand\":\"Re-contextualized modular openarchitecture\",\"category\":\"Gadgets\",\"image\":\"http:\\\/\\\/www.frami.org\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":3,\"title\":\"Advanced nextgeneration standardization\",\"description\":\"Est quia temporibus labore tempora repellendus.\",\"currency\":\"commodi\",\"price\":52492,\"brand\":\"Re-engineered clear-thinking monitoring\",\"category\":\"Apparel\",\"image\":\"http:\\\/\\\/glover.com\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":4,\"title\":\"Customizable mobile conglomeration\",\"description\":\"Sed perspiciatis molestiae libero nobis occaecati et similique qui.\",\"currency\":\"magni\",\"price\":3049,\"brand\":\"Reverse-engineered value-added hub\",\"category\":\"Apparel\",\"image\":\"http:\\\/\\\/kreiger.info\\\/sint-est-animi-magnam-placeat-recusandae-temporibus\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":5,\"title\":\"Profit-focused static infrastructure\",\"description\":\"Magni ducimus est sunt dolore corrupti magni atque sunt.\",\"currency\":\"et\",\"price\":7,\"brand\":\"Pre-emptive heuristic instructionset\",\"category\":\"Sports\",\"image\":\"http:\\\/\\\/www.hickle.com\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":6,\"title\":\"Cross-platform homogeneous frame\",\"description\":\"Id consequatur maiores velit quis doloremque.\",\"currency\":\"reiciendis\",\"price\":937071156,\"brand\":\"Networked hybrid capacity\",\"category\":\"Art\",\"image\":\"http:\\\/\\\/tremblay.com\\\/cum-iure-quo-quidem-vitae-veniam-ut\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":7,\"title\":\"Seamless background initiative\",\"description\":\"Dolor quos laborum dolores repellendus fugit ratione.\",\"currency\":\"ipsam\",\"price\":29,\"brand\":\"Expanded tangible circuit\",\"category\":\"Sports\",\"image\":\"http:\\\/\\\/www.russel.biz\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":8,\"title\":\"Up-sized methodical model\",\"description\":\"Necessitatibus nihil quo dolores excepturi neque aut tempora eius.\",\"currency\":\"eos\",\"price\":7,\"brand\":\"Organic logistical success\",\"category\":\"Art\",\"image\":\"https:\\\/\\\/koepp.biz\\\/enim-accusantium-architecto-at-est-sunt-ullam.html\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":9,\"title\":\"Expanded bi-directional protocol\",\"description\":\"Et autem maxime voluptatum dolorem aut culpa sit blanditiis.\",\"currency\":\"dolore\",\"price\":92,\"brand\":\"Business-focused secondary flexibility\",\"category\":\"Fashion\",\"image\":\"http:\\\/\\\/zemlak.net\\\/sit-consequatur-odio-repellat-est-vitae-voluptate\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"},{\"id\":10,\"title\":\"Stand-alone disintermediate utilisation\",\"description\":\"Cupiditate eaque harum debitis autem provident animi non doloribus et amet.\",\"currency\":\"vel\",\"price\":89886,\"brand\":\"Switchable even-keeled middleware\",\"category\":\"Books\",\"image\":\"http:\\\/\\\/www.mills.info\\\/\",\"created_at\":\"2022-10-01T07:10:04.000000Z\",\"updated_at\":\"2022-10-01T07:10:04.000000Z\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/products\/category\/{category_name}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/products\/category\/:category_name",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/products\/category\/:category_name",
+                            "variable": [
+                                {
+                                    "id": "category_name",
+                                    "key": "category_name",
+                                    "value": "reiciendis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "54"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/user",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/user"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

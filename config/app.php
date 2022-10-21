@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
-
+// $app->register(\Knuckles\Scribe\ScribeServiceProvider::class);
+// $app->configure('scribe');
 return [
 
     /*
@@ -211,5 +212,7 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
+
+
 
 ];
